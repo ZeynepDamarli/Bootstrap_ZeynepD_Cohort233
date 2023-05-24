@@ -34,7 +34,6 @@
     <div class="d-flex justify-content-start w-50"><h2>Mail</h2></div>
   </div>
 </nav>
-</div>
 
 
 <!--Row2 New,Attach,Folder-->
@@ -42,65 +41,136 @@
   <div class="row">
     <div class="col ">
     <div id="modalbtn">
+      <!--yeni-->
+    <div class="offcanvas offcanvas-start" id="demo">
+      <div class="offcanvas-header">
+        
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p><a href="#"> Inbox (14)</a></p>
+        <p><a href="#">Sent</a></p>
+        <p><a href="#"> Trash</a></p>
+        <p><a href="#"> Drafts</a></p> 
+      </div>
+    </div>
+    
+<!-- Button to open the offcanvas sidebar -->
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+      Folder
+    </button>
+    
+<!--Compose--> 
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
       Compose
       </button>
-      </div>
-    </div>
-<!--
-    <div class="col   ">
-      <div id="modalbtn">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<!--Attach-->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Attach
         </button>
-        </div>
+      </div>
     </div>
--->
+<!--Search-->
     <div class="col ">
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      
+        </form>      
     </div>
   </div>
 </div>
 <!--SenderInfo&MailBody-->
-<div class="container container-fluid myContainer myMailBody">
-  <div class="row">
-    <div class="col">
-          <!--SenderInfo-->
-          <div class="container senderInfo">
-            <div class="row">
-              <div class="col"> 
-                <table class="table table-striped mytable">
-                  <tbody>
-                    <tr>
-                      <td><strong>Sender</strong></td>
-                      <td><strong>Subject</strong></td>
-                      <td><strong>Time</strong></td>
-                    </tr>
-                    <tr>
-                      <td>Sam Newsom</td>
-                      <td>Lorem Ipsum</td>
-                      <td>9:30pm</td>
-                    </tr>
-                    <tr>
-                      <td>Tim Burton</td>
-                      <td>Lorem Ipsum</td>
-                      <td>11:00am</td>
-                    </tr>
-                    <tr>
-                      <td>Liv Carl</td>
-                      <td>Lorem Ipsum</td>
-                      <td>10:00am</td>
-                    </tr>
-                  </tbody>
-                </table>
-            </div>
-          </div>
-          </div>
-         <!---->    
+
+  <div class="card senderColor">  
+    <div class="card-header">
+      <div class="container">
+        <div class="row">
+          <div class="col"><a class="btn" data-bs-toggle="collapse">
+                <strong>Sender</strong>
+              </a></div>
+          <div class="col"><a class="btn" data-bs-toggle="collapse">
+                <strong>Subject</strong>
+              </a></div>  
+          <div class="col"><a class="btn" data-bs-toggle="collapse">
+                <strong>Time</strong>
+              </a></div>         
+        </div>
+      </div>
+    </div> 
+  </div>
+  
+  <div class="card senderColor1">  
+    <div class="card-header">
+      <div class="container">
+        <div class="row">
+          <div class="col"><a class="btn" data-bs-toggle="collapse" href="#collapseTwo">
+                Sam Newsom
+              </a></div>
+              
+          <div class="col"><a class="btn" data-bs-toggle="collapse">
+                Lorem Ipsum
+              </a></div>  
+          <div class="col"><a class="btn" data-bs-toggle="collapse">
+                9.30am
+              </a></div>
+              <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum..
+                </div>
+              </div>         
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <div class="card senderColor">  
+    <div class="card-header">
+      <div class="container">
+        <div class="row">
+          <div class="col"><a class="btn" data-bs-toggle="collapse" href="#collapseFour">
+                Tim Burton
+              </a></div>
+              
+          <div class="col"><a class="btn" data-bs-toggle="collapse">
+                Lorem Ipsum
+              </a></div>  
+          <div class="col"><a class="btn" data-bs-toggle="collapse">
+                11:00am
+              </a></div>
+              <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum..
+                </div>
+              </div>         
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <div class="card senderColor1">  
+    <div class="card-header">
+      <div class="container">
+        <div class="row">
+          <div class="col"><a class="btn" data-bs-toggle="collapse" href="#collapseThree">
+                Liv Carl
+              </a></div>
+              
+          <div class="col"><a class="btn" data-bs-toggle="collapse">
+                Lorem Ipsum
+              </a></div>  
+          <div class="col"><a class="btn" data-bs-toggle="collapse">
+                1:00pm
+              </a></div>
+              <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum..
+                </div>
+              </div>         
+        </div>
+      </div>
+    </div> 
+  </div>
+
           
           <div class="container emailBody">
             <div class="row">
@@ -108,19 +178,6 @@
             </div>
           </div>  
         
-    </div>
-    <div class="col">
-            <!--Folder-->
-            <div class="col" > 
-              <div class="row"><a href="#"> Inbox (14)</a></div>
-              <div class="row"><a href="#">Sent</a></div>
-              <div class="row"><a href="#"> Trash</a></div>
-              <div class="row"><a href="#"> Drafts</a></div>  
-            </div>
-    </div>
-  </div>
-</div>
-  </div>
 
 
   <script

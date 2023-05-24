@@ -1,6 +1,7 @@
 body {
   background-color: rgb(234, 247, 242);
 }
+
 .mynavbar {
   background-color: rgb(12, 83, 83);
   color: azure;
@@ -14,19 +15,19 @@ body {
   margin-left: 0%;
   justify-content: center;
 }
-
-.myMailBody{
-  margin: 10px;
-  margin-left: 0%;
+.senderColor{
+  background-color:rgb(182, 202, 202) ;
 }
-.senderInfo{
-  margin: 10px;
-  margin-left: 0%;
+.senderColor1{
+  background-color:rgb(151, 176, 176) ;
 }
 .emailBody{
-  margin-left: 0%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-left: 5%;
   border: 10%;
   background-color: rgb(249, 250, 251);
   height: 500px;
-  width: 1000px;
+  width: 2000px;
 }
