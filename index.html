@@ -16,6 +16,7 @@
 </head>
 <body>
 <!--NAVBAR-->
+
 <nav class="navbar mynavbar navbar-dark ">
   <div class="container-fluid">
     <button
@@ -29,70 +30,97 @@
     >
       <span class="navbar-toggler-icon"></span></button
     >
+    
     <div class="d-flex justify-content-start w-50"><h2>Mail</h2></div>
   </div>
 </nav>
 </div>
+
+
 <!--Row2 New,Attach,Folder-->
 <div class="container container-fluid myContainer">
   <div class="row">
-    <div class="col col-xs-12 col-md-6 col-lg-3">
-      <spam><input type="text"placeholder="New"/></spam>
+    <div class="col ">
+    <div id="modalbtn">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Compose
+      </button>
+      </div>
     </div>
+<!--
     <div class="col   ">
-      <spam><input type="Text" placeholder="Attach"/></spam>
+      <div id="modalbtn">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Attach
+        </button>
+        </div>
     </div>
-    <div class="col  ">
-      <spam><input type="search" placeholder="Search"/></spam>
-    </div>
-    <div class="col myFolder col-md-5 col-lg-4 align-self-center  " > 
-      <div class="row"><a href="#"> Inbox (14)</a></div>
-      <div class="row"><a href="#">Sent</a></div>
-      <div class="row"><a href="#"> Trash</a></div>
-      <div class="row"><a href="#"> Drafts</a></div> 
-       
+-->
+    <div class="col ">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      
     </div>
   </div>
 </div>
-<!--SenderInfo-->
-
-<div class="container senderInfo">
+<!--SenderInfo&MailBody-->
+<div class="container container-fluid myContainer myMailBody">
   <div class="row">
-    <div class="col col-xl-12 "> 
-      <table class="table table-striped mytable">
-        <tbody>
-          <tr>
-            <td><strong>Sender</strong></td>
-            <td><strong>Subject</strong></td>
-            <td><strong>Time</strong></td>
-          </tr>
-          <tr>
-            <td>Sam Newsom</td>
-            <td>Lorem Ipsum</td>
-            <td>9:30pm</td>
-          </tr>
-          <tr>
-            <td>Tim Burton</td>
-            <td>Lorem Ipsum</td>
-            <td>11:00am</td>
-          </tr>
-          <tr>
-            <td>Liv Carl</td>
-            <td>Lorem Ipsum</td>
-            <td>10:00am</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="col">
+          <!--SenderInfo-->
+          <div class="container senderInfo">
+            <div class="row">
+              <div class="col"> 
+                <table class="table table-striped mytable">
+                  <tbody>
+                    <tr>
+                      <td><strong>Sender</strong></td>
+                      <td><strong>Subject</strong></td>
+                      <td><strong>Time</strong></td>
+                    </tr>
+                    <tr>
+                      <td>Sam Newsom</td>
+                      <td>Lorem Ipsum</td>
+                      <td>9:30pm</td>
+                    </tr>
+                    <tr>
+                      <td>Tim Burton</td>
+                      <td>Lorem Ipsum</td>
+                      <td>11:00am</td>
+                    </tr>
+                    <tr>
+                      <td>Liv Carl</td>
+                      <td>Lorem Ipsum</td>
+                      <td>10:00am</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+          </div>
+          </div>
+         <!---->    
+          
+          <div class="container emailBody">
+            <div class="row">
+              <div class="col">Mail Body</div>
+            </div>
+          </div>  
+        
+    </div>
+    <div class="col">
+            <!--Folder-->
+            <div class="col" > 
+              <div class="row"><a href="#"> Inbox (14)</a></div>
+              <div class="row"><a href="#">Sent</a></div>
+              <div class="row"><a href="#"> Trash</a></div>
+              <div class="row"><a href="#"> Drafts</a></div>  
+            </div>
+    </div>
   </div>
 </div>
-</div>
   </div>
-<!--Email Body-->
-<div class="container emailBody col-xl-12">
-  <div class="row">
-    <div class="col">Mail Body</div>
-  </div>
-</div>  
 
 
   <script
